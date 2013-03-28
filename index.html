@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>ultimate-seed by pilwon</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>ultimate-seed</h1>
+        <p>The ultimate JavaScript/Node.js full-stack seed that makes web developers insanely productive. (Angular, Bower, Bootstrap, Compass/SCSS, Express, Grunt, Handlebars, jQuery, JSHint, Karma, Livereload, Lodash/Underscore, Mocha w/ Chai, Modernizr, MongoDB w/ Mongoose, Redis w/ Hiredis, SocketIO, Uglify)</p>
+        <p class="view"><a href="https://github.com/pilwon/ultimate-seed">View the Project on GitHub <small>pilwon/ultimate-seed</small></a></p>
+        <ul>
+          <li><a href="https://github.com/pilwon/ultimate-seed/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/pilwon/ultimate-seed/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/pilwon/ultimate-seed">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><code>ultimate-seed</code> is the ultimate JavaScript/Node.js full-stack seed that makes web developers insanely productive.</p>
+
+<p>This project uses <a href="https://github.com/pilwon/ultimate">ultimate</a> dependency library.</p>
+
+<h2>What's Included?</h2>
+
+<p>This seed integrates a bunch of popular modern web frameworks and libraries.</p>
+
+<ul>
+<li><a href="http://angularjs.org/">Angular</a></li>
+<li><a href="http://twitter.github.com/bower/">Bower</a></li>
+<li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
+<li>
+<a href="http://compass-style.org/">Compass</a> (<a href="http://sass-lang.com/">SCSS</a>)</li>
+<li><a href="http://expressjs.com/">Express</a></li>
+<li><a href="http://gruntjs.com/">Grunt</a></li>
+<li><a href="http://handlebarsjs.com/">Handlebars</a></li>
+<li><a href="http://jquery.com/">jQuery</a></li>
+<li><a href="http://www.jshint.com/">JSHint</a></li>
+<li><a href="http://karma-runner.github.com/">Karma</a></li>
+<li><a href="http://livereload.com/">Livereload</a></li>
+<li>
+<a href="http://lodash.com/">Lodash</a> (<a href="http://underscorejs.org/">Underscore</a>)</li>
+<li>
+<a href="http://visionmedia.github.com/mocha/">Mocha</a> w/ <a href="http://chaijs.com/">Chai</a>
+</li>
+<li><a href="http://modernizr.com/">Modernizr</a></li>
+<li>
+<a href="http://www.mongodb.org/">MongoDB</a> w/ <a href="http://www.mongoose.com/">Mongoose</a>
+</li>
+<li>
+<a href="http://redis.io/">Redis</a> w/ <a href="https://github.com/redis/hiredis">Hiredis</a>
+</li>
+<li><a href="http://socket.io/">SocketIO</a></li>
+<li><a href="http://lisperator.net/uglifyjs/">Uglify</a></li>
+</ul><h2>How to Use</h2>
+
+<p>First of all, you need the following dependencies:</p>
+
+<table>
+<tr>
+<th align="left">Dependency</th>
+<th align="left">Installation</th>
+</tr>
+<tr>
+<td align="left"><a href="http://twitter.github.com/bower/">Bower</a></td>
+<td align="left"><code>npm install bower -g</code></td>
+</tr>
+<tr>
+<td align="left"><a href="http://compass-style.org/">Compass</a></td>
+<td align="left"><code>gem install compass</code></td>
+</tr>
+<tr>
+<td align="left"><a href="http://gruntjs.com/">Grunt</a></td>
+<td align="left"><code>npm install grunt-cli -g</code></td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.mongodb.org/">MongoDB</a></td>
+<td align="left"><a href="http://www.mongodb.org/downloads">download</a></td>
+</tr>
+<tr>
+<td align="left"><a href="http://nodejs.org/">Node.js</a></td>
+<td align="left"><a href="http://nodejs.org/download/">download</a></td>
+</tr>
+<tr>
+<td align="left"><a href="http://redis.io/">Redis</a></td>
+<td align="left"><a href="http://redis.io/download">download</a></td>
+</tr>
+</table><p>Then, make sure <code>MongoDB</code> server is running somewhere (or use free services such as <a href="https://www.mongohq.com/">MongoHQ</a> or <a href="https://mongolab.com/">MongoLab</a>). Update configuration information in <code>config/{development,production}.json</code>.</p>
+
+<p><code>Redis</code> server is optional but it is highly recommended. Modify <em>session.store._use</em> variable as well as Redis connection information in the configuration file if you wish to use Redis as session backend. There is also a free Redis hosting provider, <a href="http://redistogo.com/">Redis To Go</a>.</p>
+
+<p>Now run the following commands to download <code>ultimate-seed</code> and its dependencies:</p>
+
+<pre><code>$ git clone https://github.com/pilwon/ultimate-seed.git
+$ cd ultimate-seed
+$ npm install &amp;&amp; bower install
+</code></pre>
+
+<p>Finally, use the following commands to start, test, and build your app:</p>
+
+<pre><code>$ grunt server              # start server
+$ grunt test                # run tests
+$ grunt                     # jshint, test, then build
+$ grunt clean               # clean grunt grenerated files
+</code></pre>
+
+<h2>Directory Structure</h2>
+
+<pre><code>.
+├── client/
+│   ├── components/
+│   ├── fonts/
+│   ├── img/
+│   ├── js/
+│   │   ├── controllers/
+│   │   ├── directives/
+│   │   ├── filters/
+│   │   ├── services/
+│   │   └── vendor/
+│   ├── scss/
+│   └── tpl/
+│       └── _partials/
+├── config/
+│   ├── development.json
+│   ├── karma.conf.js
+│   └── production.json
+├── node_modules/
+├── server/
+│   ├── controllers/
+│   ├── lib/
+│   ├── models/
+│   ├── views/
+│   │   ├── _errors/
+│   │   ├── _helpers/
+│   │   ├── _layouts/
+│   │   ├── _partials/
+│   │   ├── account/
+│   │   ├── admin/
+│   │   └── auth/
+│   ├── app.js
+│   ├── index.js
+│   ├── routes.js
+│   └── socketio.js
+├── test/
+│   ├── client/
+│   │   ├── controllers/
+│   │   ├── directives/
+│   │   ├── filters/
+│   │   └── services/
+│   └── server/
+├── .bowerrc
+├── .editorconfig
+├── .jshintrc
+├── Gruntfile.js
+├── component.json
+├── package.json
+└── project.json
+</code></pre>
+
+<h2>Screenshot</h2>
+
+<p><img src="https://raw.github.com/pilwon/ultimate-seed/master/client/img/screenshot.png" alt="screenshot"></p>
+
+<h2>License</h2>
+
+<p><code>ultimate-seed</code> is released under the MIT License.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/pilwon">pilwon</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
