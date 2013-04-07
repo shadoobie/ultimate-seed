@@ -18,7 +18,7 @@
     <div class="wrapper">
       <header>
         <h1>ultimate-seed</h1>
-        <p>The ultimate JavaScript/Node.js full-stack seed that makes web developers insanely productive. (Angular, Bower, Bootstrap, Compass/SCSS, Express, Grunt, Handlebars, jQuery, JSHint, Karma, Livereload, Lodash/Underscore, Mocha w/ Chai, Modernizr, MongoDB w/ Mongoose, Passport, Passport-Facebook, Passport-Google, Passport-Twitter, Redis w/ Hiredis, SocketIO, Uglify)</p>
+        <p>The ultimate JavaScript/Node.js full-stack seed that makes web developers insanely productive. (Backbone, Bower, Bootstrap, Compass/SCSS, Express, Grunt, Handlebars, jQuery, JSHint, Karma, Livereload, Lodash/Underscore, Marionette, Mocha w/ Chai, Modernizr, MongoDB w/ Mongoose, Passport, Passport-Facebook, Passport-Google, Passport-Twitter, Redis w/ Hiredis, RequireJS, SocketIO, Uglify)</p>
         <p class="view"><a href="https://github.com/pilwon/ultimate-seed">View the Project on GitHub <small>pilwon/ultimate-seed</small></a></p>
         <ul>
           <li><a href="https://github.com/pilwon/ultimate-seed/zipball/master">Download <strong>ZIP File</strong></a></li>
@@ -36,11 +36,10 @@
 <p>This seed integrates a bunch of popular modern web frameworks and libraries.</p>
 
 <ul>
-<li><a href="http://angularjs.org/">Angular</a></li>
+<li><a href="http://backbonejs.org/">Backbone</a></li>
 <li><a href="http://twitter.github.com/bower/">Bower</a></li>
 <li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
-<li>
-<a href="http://compass-style.org/">Compass</a> (<a href="http://sass-lang.com/">SCSS</a>)</li>
+<li><a href="http://compass-style.org/">Compass</a> (<a href="http://sass-lang.com/">SCSS</a>)</li>
 <li><a href="http://expressjs.com/">Express</a></li>
 <li><a href="http://gruntjs.com/">Grunt</a></li>
 <li><a href="http://handlebarsjs.com/">Handlebars</a></li>
@@ -48,22 +47,17 @@
 <li><a href="http://www.jshint.com/">JSHint</a></li>
 <li><a href="http://karma-runner.github.com/">Karma</a></li>
 <li><a href="http://livereload.com/">Livereload</a></li>
-<li>
-<a href="http://lodash.com/">Lodash</a> (<a href="http://underscorejs.org/">Underscore</a>)</li>
-<li>
-<a href="http://visionmedia.github.com/mocha/">Mocha</a> w/ <a href="http://chaijs.com/">Chai</a>
-</li>
+<li><a href="http://lodash.com/">Lodash</a> (<a href="http://underscorejs.org/">Underscore</a>)</li>
+<li><a href="http://marionettejs.com">Marionette</a></li>
+<li><a href="http://visionmedia.github.com/mocha/">Mocha</a> w/ <a href="http://chaijs.com/">Chai</a></li>
 <li><a href="http://modernizr.com/">Modernizr</a></li>
-<li>
-<a href="http://www.mongodb.org/">MongoDB</a> w/ <a href="http://www.mongoose.com/">Mongoose</a>
-</li>
+<li><a href="http://www.mongodb.org/">MongoDB</a> w/ <a href="http://www.mongoose.com/">Mongoose</a></li>
 <li><a href="http://passportjs.org/">Passport</a></li>
 <li><a href="https://github.com/jaredhanson/passport-facebook">Passport-Facebook</a></li>
 <li><a href="https://github.com/jaredhanson/passport-google-oauth/">Passport-Google</a></li>
 <li><a href="https://github.com/jaredhanson/passport-twitter">Passport-Twitter</a></li>
-<li>
-<a href="http://redis.io/">Redis</a> w/ <a href="https://github.com/redis/hiredis">Hiredis</a>
-</li>
+<li><a href="http://redis.io/">Redis</a> w/ <a href="https://github.com/redis/hiredis">Hiredis</a></li>
+<li><a href="http://requirejs.org/">RequireJS</a></li>
 <li><a href="http://socket.io/">SocketIO</a></li>
 <li><a href="http://lisperator.net/uglifyjs/">Uglify</a></li>
 </ul><h2>How to Use</h2>
@@ -122,46 +116,47 @@ $ grunt clean               # clean grunt grenerated files
 
 <pre><code>.
 ├── client/
-│   ├── components/
-│   ├── fonts/
-│   ├── img/
-│   ├── js/
-│   │   ├── controllers/
-│   │   ├── directives/
-│   │   ├── filters/
-│   │   ├── services/
-│   │   └── vendor/
-│   ├── scss/
-│   └── tpl/
-│       └── _partials/
+│   ├── components/
+│   ├── img/
+│   ├── js/
+│   │   ├── collections/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── nls/
+│   │   ├── routers/
+│   │   ├── templates/
+│   │   │   ├── _helpers/
+│   │   │   ├── _i18n/
+│   │   │   └── _partials/
+│   │   ├── vendor/
+│   │   └── views/
+│   ├── scss/
+│   │   └── sass-bootstrap/
+│   ├── 404.html
+│   ├── favicon.ico
+│   ├── index.html
+│   └── robots.txt
 ├── config/
-│   ├── development.json
-│   ├── karma.conf.js
-│   └── production.json
+│   ├── development.json
+│   ├── karma.conf.js
+│   └── production.json
 ├── node_modules/
 ├── server/
-│   ├── controllers/
-│   ├── lib/
-│   ├── models/
-│   ├── views/
-│   │   ├── _errors/
-│   │   ├── _helpers/
-│   │   ├── _layouts/
-│   │   ├── _partials/
-│   │   ├── account/
-│   │   ├── admin/
-│   │   └── auth/
-│   ├── app.js
-│   ├── index.js
-│   ├── routes.js
+│   ├── controllers/
+│   ├── lib/
+│   ├── models/
+│   ├── views/
+│   │   ├── _errors/
+│   │   ├── _helpers/
+│   │   ├── _layouts/
+│   │   ├── _partials/
+│   │   ├── account/
+│   │   ├── admin/
+│   │   └── auth/
+│   ├── app.js
+│   ├── index.js
+│   ├── routes.js
 │   └── socketio.js
-├── test/
-│   ├── client/
-│   │   ├── controllers/
-│   │   ├── directives/
-│   │   ├── filters/
-│   │   └── services/
-│   └── server/
 ├── .bowerrc
 ├── .editorconfig
 ├── .jshintrc
