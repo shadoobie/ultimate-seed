@@ -70,6 +70,18 @@
 <th align="left">Installation</th>
 </tr>
 <tr>
+<td align="left"><a href="http://nodejs.org/">Node.js</a></td>
+<td align="left"><a href="http://nodejs.org/download/">download</a></td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.mongodb.org/">MongoDB</a></td>
+<td align="left"><a href="http://www.mongodb.org/downloads">download</a></td>
+</tr>
+<tr>
+<td align="left"><a href="http://redis.io/">Redis</a></td>
+<td align="left"><a href="http://redis.io/download">download</a></td>
+</tr>
+<tr>
 <td align="left"><a href="http://twitter.github.com/bower/">Bower</a></td>
 <td align="left"><code>npm install bower -g</code></td>
 </tr>
@@ -80,18 +92,6 @@
 <tr>
 <td align="left"><a href="http://gruntjs.com/">Grunt</a></td>
 <td align="left"><code>npm install grunt-cli -g</code></td>
-</tr>
-<tr>
-<td align="left"><a href="http://www.mongodb.org/">MongoDB</a></td>
-<td align="left"><a href="http://www.mongodb.org/downloads">download</a></td>
-</tr>
-<tr>
-<td align="left"><a href="http://nodejs.org/">Node.js</a></td>
-<td align="left"><a href="http://nodejs.org/download/">download</a></td>
-</tr>
-<tr>
-<td align="left"><a href="http://redis.io/">Redis</a></td>
-<td align="left"><a href="http://redis.io/download">download</a></td>
 </tr>
 </table><p>Then, make sure <code>MongoDB</code> server is running somewhere (or use free services such as <a href="https://www.mongohq.com/">MongoHQ</a> or <a href="https://mongolab.com/">MongoLab</a>). Update configuration information in <code>config/{development,production}.json</code>.</p>
 
@@ -104,13 +104,15 @@ $ cd ultimate-seed
 $ npm install &amp;&amp; bower install
 </code></pre>
 
-<p>Finally, use the following commands to start, test, and build your app:</p>
+<p>Finally, use the following commands to start, build, and deploy your app:</p>
 
-<pre><code>$ grunt server              # start server
-$ grunt test                # run tests
-$ grunt                     # jshint, test, then build
-$ grunt clean               # clean grunt grenerated files
+<pre><code>$ grunt server                          # start server
+$ grunt                                 # jshint &amp; build
+$ grunt clean                           # clean grenerated files
+$ NODE_ENV=production node server       # run server in production mode
 </code></pre>
+
+<p>* NOTE: Run `grunt` before starting the server in production environment.</p>
 
 <h2>Directory Structure</h2>
 
