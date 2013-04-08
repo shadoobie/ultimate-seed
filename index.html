@@ -4,29 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>ultimate-seed by pilwon</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/pilwon/ultimate-seed">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/pilwon/ultimate-seed/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/pilwon/ultimate-seed/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1>ultimate-seed</h1>
-        <p>The ultimate JavaScript/Node.js full-stack seed that makes web developers insanely productive. (Backbone, Bower, Bootstrap, Compass/SCSS, Express, Grunt, Handlebars, jQuery, JSHint, Karma, Livereload, Lodash/Underscore, Marionette, Mocha w/ Chai, Modernizr, MongoDB w/ Mongoose, Passport, Passport-Facebook, Passport-Google, Passport-Twitter, Redis w/ Hiredis, RequireJS, SocketIO, Uglify)</p>
-        <p class="view"><a href="https://github.com/pilwon/ultimate-seed">View the Project on GitHub <small>pilwon/ultimate-seed</small></a></p>
-        <ul>
-          <li><a href="https://github.com/pilwon/ultimate-seed/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/pilwon/ultimate-seed/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/pilwon/ultimate-seed">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
+
       <section>
+        <div id="title">
+          <h1>ultimate-seed</h1>
+          <p>The ultimate JavaScript/Node.js full-stack seed that makes web developers insanely productive. (Angular, Bower, Bootstrap, Compass/SCSS, Express, Grunt, Handlebars, jQuery, JSHint, Karma, Livereload, Lodash/Underscore, Mocha w/ Chai, Modernizr, MongoDB w/ Mongoose, Redis w/ Hiredis, SocketIO, Uglify)</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/pilwon">pilwon</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
         <p><code>ultimate-seed</code> is the ultimate JavaScript/Node.js full-stack seed that makes web developers insanely productive.</p>
 
 <p>This project uses <a href="https://github.com/pilwon/ultimate">ultimate</a> dependency library.</p>
@@ -39,7 +50,8 @@
 <li><a href="http://backbonejs.org/">Backbone</a></li>
 <li><a href="http://twitter.github.com/bower/">Bower</a></li>
 <li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
-<li><a href="http://compass-style.org/">Compass</a> (<a href="http://sass-lang.com/">SCSS</a>)</li>
+<li>
+<a href="http://compass-style.org/">Compass</a> (<a href="http://sass-lang.com/">SCSS</a>)</li>
 <li><a href="http://expressjs.com/">Express</a></li>
 <li><a href="http://gruntjs.com/">Grunt</a></li>
 <li><a href="http://handlebarsjs.com/">Handlebars</a></li>
@@ -47,22 +59,29 @@
 <li><a href="http://www.jshint.com/">JSHint</a></li>
 <li><a href="http://karma-runner.github.com/">Karma</a></li>
 <li><a href="http://livereload.com/">Livereload</a></li>
-<li><a href="http://lodash.com/">Lodash</a> (<a href="http://underscorejs.org/">Underscore</a>)</li>
-<li><a href="http://marionettejs.com">Marionette</a></li>
-<li><a href="http://visionmedia.github.com/mocha/">Mocha</a> w/ <a href="http://chaijs.com/">Chai</a></li>
+<li>
+<a href="http://lodash.com/">Lodash</a> (<a href="http://underscorejs.org/">Underscore</a>)</li>
+<li><a href="http://marionettejs.com/">Marionette</a></li>
+<li>
+<a href="http://visionmedia.github.com/mocha/">Mocha</a> w/ <a href="http://chaijs.com/">Chai</a>
+</li>
 <li><a href="http://modernizr.com/">Modernizr</a></li>
-<li><a href="http://www.mongodb.org/">MongoDB</a> w/ <a href="http://www.mongoose.com/">Mongoose</a></li>
+<li>
+<a href="http://www.mongodb.org/">MongoDB</a> w/ <a href="http://www.mongoose.com/">Mongoose</a>
+</li>
 <li><a href="http://passportjs.org/">Passport</a></li>
 <li><a href="https://github.com/jaredhanson/passport-facebook">Passport-Facebook</a></li>
-<li><a href="https://github.com/jaredhanson/passport-google-oauth/">Passport-Google</a></li>
+<li><a href="https://github.com/jaredhanson/passport-google-oauth">Passport-Google</a></li>
 <li><a href="https://github.com/jaredhanson/passport-twitter">Passport-Twitter</a></li>
-<li><a href="http://redis.io/">Redis</a> w/ <a href="https://github.com/redis/hiredis">Hiredis</a></li>
+<li>
+<a href="http://redis.io/">Redis</a> w/ <a href="https://github.com/redis/hiredis">Hiredis</a>
+</li>
 <li><a href="http://requirejs.org/">RequireJS</a></li>
 <li><a href="http://socket.io/">SocketIO</a></li>
 <li><a href="http://lisperator.net/uglifyjs/">Uglify</a></li>
 </ul><h2>How to Use</h2>
 
-<p>First of all, you need the following dependencies:</p>
+<h3>Dependencies</h3>
 
 <table>
 <tr>
@@ -93,77 +112,121 @@
 <td align="left"><a href="http://gruntjs.com/">Grunt</a></td>
 <td align="left"><code>npm install grunt-cli -g</code></td>
 </tr>
-</table><p>Then, make sure <code>MongoDB</code> server is running somewhere (or use free services such as <a href="https://www.mongohq.com/">MongoHQ</a> or <a href="https://mongolab.com/">MongoLab</a>). Update configuration information in <code>config/{development,production}.json</code>.</p>
+</table><p>Make sure <code>MongoDB</code> server is running somewhere (or use free services such as <a href="https://www.mongohq.com/">MongoHQ</a> or <a href="https://mongolab.com/">MongoLab</a>). Update configuration information in <code>config/{development,production}.json</code>.</p>
 
 <p><code>Redis</code> server is optional but it is highly recommended. Modify <em>session.store._use</em> variable as well as Redis connection information in the configuration file if you wish to use Redis as session backend. There is also a free Redis hosting provider, <a href="http://redistogo.com/">Redis To Go</a>.</p>
 
-<p>Now run the following commands to download <code>ultimate-seed</code> and its dependencies:</p>
+<h3>Installation</h3>
+
+<p>Download <code>ultimate-seed</code> and install dependency modules:</p>
 
 <pre><code>$ git clone https://github.com/pilwon/ultimate-seed.git
 $ cd ultimate-seed
 $ npm install &amp;&amp; bower install
 </code></pre>
 
-<p>Finally, use the following commands to start, build, and deploy your app:</p>
+<h3>Development</h3>
 
-<pre><code>$ grunt server                          # start server
-$ grunt                                 # jshint &amp; build
-$ grunt clean                           # clean grenerated files
-$ NODE_ENV=production node server       # run server in production mode
+<p><a href="http://gruntjs.com/">Grunt</a> tasks to build your app:</p>
+
+<pre><code>$ grunt server             # start server
+$ grunt                    # jshint &amp; build
+$ grunt clean              # clean grenerated files
 </code></pre>
 
-<p>* NOTE: Run `grunt` before starting the server in production environment.</p>
+<h2>Deployment</h2>
 
-<h2>Directory Structure</h2>
+<h3>Production Server</h3>
+
+<p>First, prepare and optimize all files used in production environment:</p>
+
+<pre><code>$ grunt
+</code></pre>
+
+<p>Then your app can be started in production mode using this command:</p>
+
+<pre><code>$ NODE_ENV=production node server
+</code></pre>
+
+<p>It is recommended to use a tool like <a href="https://github.com/nodejitsu/forever">forever</a> to ensure your app running continuously:</p>
+
+<pre><code>$ npm install forever -g
+$ NODE_ENV=production PORT=3000 forever start server
+</code></pre>
+
+<h3>Heroku</h3>
+
+<p><code>ultimate-seed</code> supports deployment of your app to <a href="https://www.heroku.com/">Heroku</a> servers.</p>
+
+<ol>
+<li>Run <code>grunt</code> to build the project.</li>
+<li>Comment out all entries in <code>.gitignore</code> (or temporarily hide/remove this file)</li>
+<li>Commit all files to a local git repository created at the project root.</li>
+<li>Add git remote pointing to Heroku:
+
+<ul>
+<li>New Heroku app: <code>heroku create APP_NAME</code>
+</li>
+<li>Existing Heroku app: <code>heroku git:remote -a APP_NAME</code>
+</li>
+</ul>
+</li>
+<li>Set the environment variable: <code>NODE_ENV=heroku</code>
+</li>
+<li>Deploy application to Heroku using <code>git push heroku +master</code>
+</li>
+</ol><h2>Directory Structure</h2>
 
 <pre><code>.
 ├── client/
-│   ├── components/
-│   ├── img/
-│   ├── js/
-│   │   ├── collections/
-│   │   ├── controllers/
-│   │   ├── models/
-│   │   ├── nls/
-│   │   ├── routers/
-│   │   ├── templates/
-│   │   │   ├── _helpers/
-│   │   │   ├── _i18n/
-│   │   │   └── _partials/
-│   │   ├── vendor/
-│   │   └── views/
-│   ├── scss/
-│   │   └── sass-bootstrap/
-│   ├── 404.html
-│   ├── favicon.ico
-│   ├── index.html
-│   └── robots.txt
+│   ├── components/
+│   ├── img/
+│   ├── js/
+│   │   ├── collections/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── nls/
+│   │   ├── routers/
+│   │   ├── templates/
+│   │   │   ├── _helpers/
+│   │   │   ├── _i18n/
+│   │   │   └── _partials/
+│   │   ├── vendor/
+│   │   └── views/
+│   ├── scss/
+│   │   └── sass-bootstrap/
+│   ├── 404.html
+│   ├── favicon.ico
+│   ├── index.html
+│   └── robots.txt
 ├── config/
-│   ├── development.json
-│   ├── karma.conf.js
-│   └── production.json
+│   ├── development.json
+│   ├── heroku.json
+│   └── production.json
 ├── node_modules/
 ├── server/
-│   ├── controllers/
-│   ├── lib/
-│   ├── models/
-│   ├── views/
-│   │   ├── _errors/
-│   │   ├── _helpers/
-│   │   ├── _layouts/
-│   │   ├── _partials/
-│   │   ├── account/
-│   │   ├── admin/
-│   │   └── auth/
-│   ├── app.js
-│   ├── index.js
-│   ├── routes.js
+│   ├── controllers/
+│   ├── lib/
+│   ├── models/
+│   ├── views/
+│   │   ├── _errors/
+│   │   ├── _helpers/
+│   │   ├── _layouts/
+│   │   ├── _partials/
+│   │   ├── account/
+│   │   ├── admin/
+│   │   └── auth/
+│   ├── app.js
+│   ├── index.js
+│   ├── routes.js
 │   └── socketio.js
 ├── .bowerrc
 ├── .editorconfig
 ├── .jshintrc
+├── .slugignore
 ├── Gruntfile.js
 ├── component.json
+├── npm-scripts.js
 ├── package.json
 └── project.json
 </code></pre>
@@ -176,11 +239,8 @@ $ NODE_ENV=production node server       # run server in production mode
 
 <p><code>ultimate-seed</code> is released under the MIT License.</p>
       </section>
+
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/pilwon">pilwon</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
